@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 body {
     display: grid;
     grid-template-rows: repeat(4, 100vh);
@@ -6,10 +11,35 @@ body {
 }
 #main {
     background-color: #4eb6ac;
+    color: white;
 }
-#about-me {
+#main header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-weight: bold;
+}
+header h1 {
+    font-size:32pt;
+    padding: 1% 1%
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px
+}
 
+#about-me {
+     text-align: center;
+     padding: 10% 25% 10% 25%;
 }
 #portfolio {
     background-color: pink;
 }
+#portfolio div {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+#experience {
+        text-align: center;
+        padding: 10% 25% 10% 25%;
+   }
